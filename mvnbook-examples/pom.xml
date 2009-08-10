@@ -2,11 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <artifactId>examples</artifactId>
   <groupId>org.sonatype.mavenbook</groupId>
-<<<<<<< HEAD:examples/pom.xml
-  <version>0.6</version>
-=======
   <version>0.7</version>
->>>>>>> mvnbook-parent-0.7:mvnbook-examples/pom.xml
   <packaging>pom</packaging>
   <name>Maven: The Definitive Guide Example Code</name>
   <description>Example Code for Maven: The Definitive Guide</description>
