@@ -3,7 +3,7 @@
   <parent>
 	<groupId>org.sonatype.mavenbook</groupId>
 	<artifactId>mvnbook-parent</artifactId>
-	<version>0.7</version>
+	<version>0.7.1-SNAPSHOT</version>
   </parent>
   <artifactId>mvnbook-content</artifactId>
   <packaging>jar</packaging>
@@ -22,12 +22,13 @@
     <organization.slogan>Sonatype: The Maven Company</organization.slogan>
     <organization.logo>http://cms.sonatype.com/sites/all/themes/sonatype/images/sonatype_logo.gif</organization.logo>
     <copyright.year>2009</copyright.year>
-    <maven.version>2.2.0</maven.version>
+    <maven.version>2.2.1</maven.version>
     <nexus.book.baseurl>http://books.sonatype.com/nexus-book-stage/</nexus.book.baseurl>
     <nexus.book.title>Repository Management with Nexus</nexus.book.title>
     <m2eclipse.book.baseurl>http://books.sonatype.com/m2eclipse-book-stage/</m2eclipse.book.baseurl>
     <m2eclipse.book.title>Developing with Eclipse and Maven</m2eclipse.book.title>
-    <flexmojos.version>3.2.0</flexmojos.version>
+    <flexmojos.version>3.3.0</flexmojos.version>
+    <flexmojos.repository>http://repository.sonatype.org/content/groups/flexgroup/</flexmojos.repository>
   </properties>
 
   <build>
@@ -101,7 +102,52 @@
             <configuration>
               <imgSrcPath>${basedir}/target/classes/docbook/</imgSrcPath>
               <foCustomization>${basedir}/target/classes/xsl/fopdf.xsl</foCustomization>
-	      <useExtensions>1</useExtensions>
+	          <useExtensions>1</useExtensions>
+	  <bodyFontFamily>TimesNewRoman</bodyFontFamily>
+	  <monospaceFontFamily>CourierNew</monospaceFontFamily>
+	  <titleFontFamily>ArialBold</titleFontFamily>
+	  <fonts>
+	    <font>
+	      <name>ArialBold</name>
+	      <style>normal</style>
+	      <weight>normal</weight>
+	      <embedFile>${basedir}/src/fonts/ArialBold.ttf</embedFile>
+              <metricsFile>${basedir}/target/fonts/ArialBold-metrics.xml</metricsFile>
+
+	    </font>
+	    <font>
+	      <name>CourierNew</name>
+	      <style>normal</style>
+	      <weight>normal</weight>
+	      <embedFile>${basedir}/src/fonts/Courier.ttf</embedFile>
+              <metricsFile>${basedir}/target/fonts/Courier-metrics.xml</metricsFile>
+
+	    </font>
+	    <font>
+	      <name>CourierNew</name>
+	      <style>normal</style>
+	      <weight>bold</weight>
+	      <embedFile>${basedir}/src/fonts/Courier-Bold.ttf</embedFile>
+              <metricsFile>${basedir}/target/fonts/Courier-Bold-metrics.xml</metricsFile>
+
+	    </font>
+	    <font>
+	      <name>CourierNew</name>
+	      <style>italic</style>
+	      <weight>normal</weight>
+	      <embedFile>${basedir}/src/fonts/Courier-Oblique.ttf</embedFile>
+              <metricsFile>${basedir}/target/fonts/Courier-Oblique-metrics.xml</metricsFile>
+
+	    </font>
+	    <font>
+	      <name>TimesNewRoman</name>
+	      <style>normal</style>
+	      <weight>normal</weight>
+	      <embedFile>${basedir}/src/fonts/TimesNewRoman.ttf</embedFile>
+              <metricsFile>${basedir}/target/fonts/TimesNewRoman-metrics.xml</metricsFile>
+
+	    </font>
+	  </fonts>
             </configuration>
           </execution>
           <execution>
@@ -147,6 +193,22 @@
 	      <includes>public-book.xml</includes>
 	      <xincludeSupported>true</xincludeSupported>
 	    </configuration>
+      </plugin>
+      <plugin>
+	<groupId>com.agilejava.docbkx</groupId>
+	<artifactId>docbkx-fop-support</artifactId>
+	<version>2.0.9</version>
+	<executions>
+          <execution>
+            <phase>generate-resources</phase>
+            <goals>
+              <goal>generate</goal>
+            </goals>
+            <configuration>
+              <ansi>true</ansi>
+            </configuration>
+          </execution>
+        </executions>
       </plugin>
       <plugin>
         <groupId>org.sonatype.book</groupId>
