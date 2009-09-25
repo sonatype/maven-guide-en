@@ -93,13 +93,13 @@
 
         <mediaobject>
           <imageobject role="web">
-            <imagedata fileref="figs/web/multimodule-web-spring_projects.png"
-                       />
+            <imagedata fileref="figs/web/multimodule-web-spring_projects.png" />
           </imageobject>
 
           <imageobject role="print">
-            <imagedata fileref="figs/print/multimodule-web-spring_projects.pdf"
-                       format="PDF"  align="center" scalefit="0" width="100%"/>
+            <imagedata align="center"
+                       fileref="figs/print/multimodule-web-spring_projects.pdf"
+                       format="PDF" scalefit="0" width="100%" />
           </imageobject>
         </mediaobject>
       </figure>
@@ -123,9 +123,9 @@
             the <acronym>XML</acronym> and create
             <classname>Weather</classname> objects which are then used by the
             application. This project contains model objects annotated with
-            Hibernate 3 Annotations which are used by the logic in
-            simple-persist to map each model object to a corresponding table
-            in a relational database.</para>
+            Hibernate 3 Annotations. These annotations are used by the logic
+            in <varname>simple-persist</varname> to map each model object to a
+            corresponding table in a relational database.</para>
           </listitem>
         </varlistentry>
 
@@ -391,12 +391,13 @@
       <mediaobject>
         <imageobject role="web">
           <imagedata fileref="figs/web/multimodule-web-spring_object-model.png"
-                     format="PNG"/>
+                     format="PNG" />
         </imageobject>
 
         <imageobject role="print">
-          <imagedata fileref="figs/print/multimodule-web-spring_object-model.pdf"
-                     format="PDF"  align="center" scalefit="0" width="100%"/>
+          <imagedata align="center"
+                     fileref="figs/print/multimodule-web-spring_object-model.pdf"
+                     format="PDF" scalefit="0" width="100%" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -1458,13 +1459,13 @@ class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBea
 
       <mediaobject>
         <imageobject role="web">
-          <imagedata fileref="figs/web/multimodule-web-web-spring.png"
-                     />
+          <imagedata fileref="figs/web/multimodule-web-web-spring.png" />
         </imageobject>
 
         <imageobject role="print">
-          <imagedata fileref="figs/print/multimodule-web-web-spring.pdf"
-                     format="PDF"  align="center" scalefit="0" width="100%"/>
+          <imagedata align="center"
+                     fileref="figs/print/multimodule-web-web-spring.pdf"
+                     format="PDF" scalefit="0" width="100%" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -1748,10 +1749,10 @@ public class WeatherController implements Controller {
 </programlisting>
     </example>
 
-    <para>The syntax for this Velocity template is straightforward, variables
+    <para>The syntax for this Velocity template is straightforward: variables
     are referenced using <code>\${}</code> notation. The expression between
     the curly braces references a property, or a property of a property on the
-    <varname>weather</varname> variable which was passed to this template by
+    <varname>weather</varname> variable, which was passed to this template by
     the <classname>WeatherController</classname>.</para>
 
     <para>The <classname>HistoryController</classname> is used to retrieve
@@ -2243,13 +2244,13 @@ Weather History for: \${location.city}, \${location.region}, \${location.country
 
       <mediaobject>
         <imageobject role="web">
-          <imagedata fileref="figs/web/multimodule-web-command-spring.png"
-                     />
+          <imagedata fileref="figs/web/multimodule-web-command-spring.png" />
         </imageobject>
 
         <imageobject role="print">
-          <imagedata fileref="figs/print/multimodule-web-command-spring.pdf"
-                     format="PDF"  align="center" scalefit="0" width="100%"/>
+          <imagedata align="center"
+                     fileref="figs/print/multimodule-web-command-spring.pdf"
+                     format="PDF" scalefit="0" width="100%" />
         </imageobject>
       </mediaobject>
     </figure>
@@ -2347,7 +2348,7 @@ Weather History for: \${location.city}, \${location.region}, \${location.country
 </programlisting>
     </example>
 
-    <para>This <acronym>POM</acronym> creates an <acronym>JAR</acronym> file
+    <para>This <acronym>POM</acronym> creates a <acronym>JAR</acronym> file
     which will contain the
     <classname>org.sonatype.mavenbook.weather.Main</classname> class shown in
     <xref linkend="ex-spring-command-main-class" />. In this
@@ -2356,7 +2357,7 @@ Weather History for: \${location.city}, \${location.region}, \${location.country
     <varname>jar-with-dependencies</varname> which creates a single
     <acronym>JAR</acronym> file containing all the bytecode a project needs to
     execute including the bytecode from the project you are building and all
-    the dependency bytecode.</para>
+    the bytecode from libraries your project depends upons.</para>
 
     <example id="ex-spring-command-main-class">
       <title>The Main class for simple-command</title>
@@ -2758,12 +2759,13 @@ Evanston, IL, US
 
         <mediaobject>
           <imageobject role="web">
-            <imagedata fileref="figs/web/multimodule-web-spring_projects-complex.png"
-                       />
+            <imagedata fileref="figs/web/multimodule-web-spring_projects-complex.png" />
           </imageobject>
 
           <imageobject role="print">
-            <imagedata fileref="figs/print/multimodule-web-spring_projects-complex.pdf"  align="center" scalefit="0" width="100%"/>
+            <imagedata align="center"
+                       fileref="figs/print/multimodule-web-spring_projects-complex.pdf"
+                       scalefit="0" width="100%" />
           </imageobject>
         </mediaobject>
       </figure>
