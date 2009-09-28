@@ -16,7 +16,7 @@
 
   <para>Evanston, IL</para>
 
-  <para>September 26, 2009</para>
+  <para>September 28, 2009</para>
 
   <section id="foreword-sect-revisions">
     <title>Revision History</title>
@@ -24,6 +24,229 @@
     <para>Many readers have been asking us to keep track of specific changes
     to the book content, the following sections list changes made to the book
     in reverse chronological order starting with ${project.version}.</para>
+
+    <section>
+      <title>Changes in Edition 0.8</title>
+
+      <para>The following changes were made:</para>
+
+      <itemizedlist>
+        <listitem>
+          <para>Changed the name of the "Installing and Running Maven" Chapter
+          to "Installing Maven" Chapter. (<ulink
+          url="https://issues.sonatype.org/browse/MVNDEF-389">MVNDEF-389</ulink>)</para>
+        </listitem>
+
+        <listitem>
+          <para>Created a new chapter "Running Maven" covering the various
+          command line options available when running Maven. The initial
+          content documents the new reactor options. (<ulink
+          url="https://issues.sonatype.org/browse/MVNDEF-388">MVNDEF-388</ulink>)</para>
+
+          <itemizedlist>
+            <listitem>
+              <para>Added <xref linkend="running-sect-options" />.</para>
+            </listitem>
+
+            <listitem>
+              <para>Added <xref linkend="running-sect-define-prop" />. (<ulink
+              url="https://issues.sonatype.org/browse/MVNDEF-388">MVNDEF-388</ulink>)</para>
+            </listitem>
+
+            <listitem>
+              <para>Added <xref linkend="running-sect-help-option" os="" />.
+              (<ulink
+              url="https://issues.sonatype.org/browse/MVNDEF-394">MVNDEF-394</ulink>)</para>
+            </listitem>
+
+            <listitem>
+              <para>Added <xref linkend="running-sect-profile-option" />.
+              (<ulink
+              url="https://issues.sonatype.org/browse/MVNDEF-395">MVNDEF-395</ulink>)</para>
+            </listitem>
+
+            <listitem>
+              <para>Added <xref linkend="running-sect-version-option" />.
+              (<ulink
+              url="https://issues.sonatype.org/browse/MVNDEF-396">MVNDEF-396</ulink>)</para>
+            </listitem>
+
+            <listitem>
+              <para>Added <xref linkend="running-sect-offline-option" />.
+              (<ulink
+              url="https://issues.sonatype.org/browse/MVNDEF-397">MVNDEF-397</ulink>)</para>
+            </listitem>
+
+            <listitem>
+              <para>Added <xref linkend="running-sect-norecurse-option" />.
+              (<ulink
+              url="https://issues.sonatype.org/browse/MVNDEF-398">MVNDEF-398</ulink>)</para>
+            </listitem>
+
+            <listitem>
+              <para>Added <xref linkend="running-sect-plugup-option" />.
+              (<ulink
+              url="https://issues.sonatype.org/browse/MVNDEF-399">MVNDEF-399</ulink>)</para>
+            </listitem>
+
+            <listitem>
+              <para>Added <xref linkend="running-sect-deps-option" />. (<ulink
+              url="https://issues.sonatype.org/browse/MVNDEF-400">MVNDEF-400</ulink>)</para>
+            </listitem>
+
+            <listitem>
+              <para>Added <xref linkend="running-sect-batch-option" />.
+              (<ulink
+              url="https://issues.sonatype.org/browse/MVNDEF-401">MVNDEF-401</ulink>)</para>
+            </listitem>
+
+            <listitem>
+              <para>Added <xref linkend="running-sect-verbose-option" />.
+              (<ulink
+              url="https://issues.sonatype.org/browse/MVNDEF-402">MVNDEF-402</ulink>)</para>
+            </listitem>
+
+            <listitem>
+              <para>Added <xref linkend="running-sect-failure-option" />.
+              (<ulink url="???">MVNDEF-403</ulink>)</para>
+            </listitem>
+
+            <listitem>
+              <para>Added <xref linkend="running-sect-encrypt-option" />.
+              (<ulink
+              url="https://issues.sonatype.org/browse/MVNDEF-404">MVNDEF-404</ulink>)</para>
+            </listitem>
+
+            <listitem>
+              <para>Added <xref
+              linkend="running-sect-custom-locations-option" />. (<ulink
+              url="https://issues.sonatype.org/browse/MVNDEF-405">MVNDEF-405</ulink>)</para>
+            </listitem>
+
+            <listitem>
+              <para>Moved <xref
+              linkend="installation-sect-help-plugin-install" /> to the
+              Running Maven Chapter. (<ulink
+              url="https://issues.sonatype.org/browse/MVNDEF-406">MVNDEF-406</ulink>)</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+
+        <listitem>
+          <para>Fixed PDF Book build to properly highlight commands with the
+          appropriate inline style. (<ulink
+          url="https://issues.sonatype.org/browse/MVNDEF-368">MVNDEF-368</ulink>)</para>
+        </listitem>
+
+        <listitem>
+          <para>Update all of the Example Download Instructions sections
+          throughout the book to point to an updated examples archive. (<ulink
+          url="https://issues.sonatype.org/browse/MVNDEF-413">MVNDEF-413</ulink>)</para>
+
+          <itemizedlist>
+            <listitem>
+              <para>Updated the instructions in <xref
+              linkend="simple-project-sect-downloading-example" />. (<ulink
+              url="https://issues.sonatype.org/browse/MVNDEF-414">MVNDEF-414</ulink>)</para>
+            </listitem>
+
+            <listitem>
+              <para>Updated the instructions in <xref
+              linkend="customizing-sect-downloading" />. (<ulink
+              url="https://issues.sonatype.org/browse/MVNDEF-415">MVNDEF-415</ulink>)</para>
+            </listitem>
+
+            <listitem>
+              <para>Updated the instructions in <xref
+              linkend="web-sect-downloading" />. (<ulink
+              url="https://issues.sonatype.org/browse/MVNDEF-417">MVNDEF-417</ulink>)</para>
+            </listitem>
+
+            <listitem>
+              <para>Updated the instructions in <xref
+              linkend="multimodule-sect-downloading" />. (<ulink
+              url="https://issues.sonatype.org/browse/MVNDEF-421">MVNDEF-421</ulink>)</para>
+            </listitem>
+
+            <listitem>
+              <para>Updated the instructions in <xref
+              linkend="multimodule-web-spring-sect-downloading-example" />.
+              (<ulink url="???">MVNDEF-422</ulink>)</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+
+        <listitem>
+          <para>Change all package names in the entire book to match new
+          package names of examples. (<ulink
+          url="https://issues.sonatype.org/browse/MVNDEF-412">MVNDEF-412</ulink>)</para>
+
+          <itemizedlist>
+            <listitem>
+              <para>Changed all Package Names containing "ch03" in <xref
+              linkend="simple-project" />. (<ulink
+              url="https://issues.sonatype.org/browse/MVNDEF-419">MVNDEF-419</ulink>)</para>
+            </listitem>
+
+            <listitem>
+              <para>Changed all Package Names containing "ch04" in <xref
+              linkend="customizing" />. (<ulink
+              url="https://issues.sonatype.org/browse/MVNDEF-416">MVNDEF-416</ulink>)</para>
+            </listitem>
+
+            <listitem>
+              <para>Changed all Package Names containing "ch05" in <xref
+              linkend="web" />. (<ulink
+              url="https://issues.sonatype.org/browse/MVNDEF-418">MVNDEF-418</ulink>)</para>
+            </listitem>
+
+            <listitem>
+              <para>Changed all Package Names containing "ch06" in <xref
+              linkend="multimodule" />. (<ulink
+              url="https://issues.sonatype.org/browse/MVNDEF-420">MVNDEF-420</ulink>)</para>
+            </listitem>
+
+            <listitem>
+              <para>Changed all Package Names containing "ch07" in <xref
+              linkend="multimodule-web-spring" />. (<ulink
+              url="https://issues.sonatype.org/browse/MVNDEF-423"
+              userlevel="">MVNDEF-423</ulink>)</para>
+            </listitem>
+
+            <listitem>
+              <para>Changed all Package Names containing "ch08" in <xref
+              linkend="optimizing" />. (<ulink
+              url="https://issues.sonatype.org/browse/MVNDEF-424">MVNDEF-424</ulink>)</para>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+
+        <listitem>
+          <para>Replaced mention of Wicket with ActiveMQ in <xref
+          linkend="installation-sect-common-interface" />. (<ulink
+          url="https://issues.sonatype.org/browse/MVNDEF-407">MVNDEF-407</ulink>)</para>
+        </listitem>
+
+        <listitem>
+          <para>Added the full text of the Creative Commons license to the
+          Copyright Chapter. (<ulink
+          url="https://issues.sonatype.org/browse/MVNDEF-135">MVNDEF-135</ulink>)</para>
+        </listitem>
+
+        <listitem>
+          <para>Updated the Trademark language in the Copyright Chapter.
+          (<ulink
+          url="https://issues.sonatype.org/browse/MVNDEF-392">MVNDEF-392</ulink>)</para>
+        </listitem>
+
+        <listitem>
+          <para>Got rid of the negative note about the quality of the Apache
+          Maven site from <xref linkend="installation-sect-getting-help" />.
+          (<ulink
+          url="https://issues.sonatype.org/browse/MVNDEF-391">MVNDEF-391</ulink>)</para>
+        </listitem>
+      </itemizedlist>
+    </section>
 
     <section>
       <title>Changes in Edition 0.7.3</title>
