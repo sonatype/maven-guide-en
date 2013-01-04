@@ -612,7 +612,7 @@ public class Main {
                                        .getResource("log4j.properties"));
 
     // Read the Zip Code from the Command-line (if none supplied, use 60202)
-    String zipcode = "60202";
+    String zipcode = "613858";//WOEID replace zip code
     try {
       zipcode = args[0]);
     } catch( Exception e ) {}
@@ -678,9 +678,9 @@ public class YahooRetriever {
 
   private static Logger log = Logger.getLogger(YahooRetriever.class);
 
-  public InputStream retrieve(int zipcode) throws Exception {
+  public InputStream retrieve(String  zipcode) throws Exception {
     log.info( "Retrieving Weather Data" );
-    String url = "http://weather.yahooapis.com/forecastrss?p=" + zipcode;
+    String url = "http://weather.yahooapis.com/forecatrss?w=" + zipcode;
     URLConnection conn = new URL(url).openConnection();
     return conn.getInputStream();
   }
