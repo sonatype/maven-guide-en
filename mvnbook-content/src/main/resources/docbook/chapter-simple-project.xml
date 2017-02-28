@@ -277,7 +277,7 @@ Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
     simplest possible Maven project. To prove to yourself that this program
     works, run it from the command line.</para>
 
-    <screen><command>$ java -cp target/simple-1.0-SNAPSHOT.jar org.sonatype.mavenbook.App
+    <screen><command>$ java -cp target/simple-1.0-SNAPSHOT.jar org.sonatype.mavenbook.simple.App
 </command>Hello World!
 </screen>
   </section>
